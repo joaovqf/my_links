@@ -1,0 +1,168 @@
+body{
+    background-image: url(../imagens/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: roboto, monospace, sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card{
+    background-color: #070d12;
+    width: 370px;
+    border: 2px solid #474133;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card .main-info{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.card .main-info img{
+    border-radius: 50px;
+    border: 4px solid #3E3E34;
+    padding: 2px; 
+}
+
+.card .main-info .cargo{
+    font-size: 16px;
+    color: #b8bbc5;
+}
+
+.card .conteudo{
+    margin-top: 15px;
+}
+
+.card .abas{
+    display: flex;
+}
+
+.card .abas .aba{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.card .abas img{
+    width: 30px;
+}
+
+.card .abas .aba.selecionado{
+    background-color: #262626;
+}
+
+.card .info-abas{
+    background-color: #262626;
+}
+
+.card .abas .aba:hover{
+    background-color: #414141;
+}
+
+.info-abas .informacao{
+    min-height: 260px;
+    padding: 15px;
+    display: none;
+}
+
+.info-abas .informacao.selecionado{
+    display: block;
+}
+
+#html{
+    color: rgb(231, 66, 6);
+}
+
+#css{
+    color: #258cf3;
+}
+
+#js{
+    color: yellow;
+}
+
+
+.info-abas .sub-titulo{
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.info-abas .descricao{
+    font-size: 14px;
+    max-height: 180px;
+    overflow-y: auto;
+    padding-right: 15px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#apresentacao{
+    text-align: left;
+    word-spacing: normal;
+
+}
+
+.info-abas .descricao span{
+    color: #ede95e;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.info-cont{
+    font-size: 13px;
+    font-family: roboto, monospace, sans-serif;
+
+}
+
+.info-cont a{
+    font-size: 10px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.botoes li a{
+    width: 250px;
+    display: block;
+    color: #f3f3f3;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.botoes li a:hover{
+    opacity: 0.8;
+}
+
+.botoes .linkedin{
+    background-color: #0A66C2;
+}
+
+.botoes .instagram{
+    background-image: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+}
+
+.botoes .github{
+    background-color: #545454;
+}
+
+.botoes .curriculo{
+    background-color: #06c185;
+}
